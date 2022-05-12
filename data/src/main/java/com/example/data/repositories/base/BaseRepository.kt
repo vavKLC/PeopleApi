@@ -1,4 +1,4 @@
-package com.example.data.base
+package com.example.data.repositories.base
 
 import android.util.Log
 import com.example.domain.either.Either

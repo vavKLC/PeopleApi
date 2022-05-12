@@ -1,6 +1,6 @@
 package com.example.data.repositories
 
-import com.example.data.base.BaseRepository
+import com.example.data.repositories.base.BaseRepository
 import com.example.data.remote.dtos.toDomain
 import com.example.data.remote.apiservices.PeopleApiService
 import com.example.domain.repositories.PeopleRepository
