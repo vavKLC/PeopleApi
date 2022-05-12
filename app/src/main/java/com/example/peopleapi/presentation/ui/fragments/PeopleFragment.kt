@@ -1,13 +1,13 @@
-package com.example.peopleapi.presentation.ui.fragment
+package com.example.peopleapi.presentation.ui.fragments
 
 import android.util.Log
 import androidx.fragment.app.viewModels
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.example.peopleapi.R
 import com.example.peopleapi.presentation.base.BaseFragment
-import com.example.peopleapi.common.extensions.submitData
+import com.example.peopleapi.presentation.extensions.submitData
 import com.example.peopleapi.databinding.FragmentPeopleBinding
-import com.example.peopleapi.presentation.ui.adapter.PeopleAdapter
+import com.example.peopleapi.presentation.ui.adapters.PeopleAdapter
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

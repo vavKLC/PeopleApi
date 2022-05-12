@@ -1,4 +1,4 @@
-package com.example.peopleapi.common.extensions
+package com.example.peopleapi.presentation.extensions
 
 import android.widget.ImageView
 import com.bumptech.glide.Glide

@@ -61,14 +61,14 @@ coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-androi
 android-core = { module = "androidx.core:core-ktx", version.ref = "core" }
 
 #UI Components
-activity-activity = { module = "androidx.activity:activity-ktx", version.ref = "activity" }
-fragment-fragment = { module = "androidx.fragment:fragment-ktx", version.ref = "fragment" }
+activity = { module = "androidx.activity:activity-ktx", version.ref = "activity" }
+fragment = { module = "androidx.fragment:fragment-ktx", version.ref = "fragment" }
 ui-material = { module = "com.google.android.material:material", version.ref = "material" }
 ui-appCompat = { module = "androidx.appcompat:appcompat", version.ref = "appCompat" }
 ui-constraint = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraint" }
 ui-viewBindingPropertyDelegate = { module = "com.github.kirich1409:viewbindingpropertydelegate-noreflection", version.ref = "viewBindingPropertyDelegate" }
 ui-splashScreen = { module = "androidx.core:core-splashscreen", version.ref = "splashScreen" }
-glide-glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
 #Legacy Support
 legacySupport-legacySupport = { module = "androidx.legacy:legacy-support-v4", version.ref = "legacySupport" }
 
@@ -113,7 +113,7 @@ koin-koin = { module = "io.insert-koin:koin-android", version.ref = "koin" }
 
 [bundles]
 #UI Components
-uiComponents = ["activity-activity", "fragment-fragment", "ui-appCompat", "ui-constraint", "ui-material", "ui-viewBindingPropertyDelegate", "glide-glide", "ui-splashScreen"]
+uiComponents = ["activity", "fragment", "ui-appCompat", "ui-constraint", "ui-material", "ui-viewBindingPropertyDelegate", "glide", "ui-splashScreen"]
 
 #Room
 room = ["room-runtime", "room-kotlinExtensionsAndCoroutinesSupport"]

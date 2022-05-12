@@ -1,7 +1,7 @@
-package com.example.data.remote.apiservice
+package com.example.data.remote.apiservices
 
 
-import com.example.data.dtos.PeopleModelDto
+import com.example.data.remote.dtos.PeopleModelDto
 import retrofit2.http.GET
 
 interface PeopleApiService {

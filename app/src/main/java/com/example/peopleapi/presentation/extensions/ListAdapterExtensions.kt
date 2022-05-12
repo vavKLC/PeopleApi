@@ -1,4 +1,4 @@
-package com.example.peopleapi.common.extensions
+package com.example.peopleapi.presentation.extensions
 
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView

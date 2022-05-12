@@ -1,7 +1,7 @@
 package com.example.data.remote
 
 import com.example.data.BuildConfig.BASE_URL
-import com.example.data.remote.apiservice.PeopleApiService
+import com.example.data.remote.apiservices.PeopleApiService
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
@@ -17,11 +17,7 @@ class RetrofitClient {
         .build()
 
     private fun provideLoggingInterceptor() =
-        HttpLoggingInterceptor().setLevel(
-            when{
-                else -> HttpLoggingInterceptor.Level.NONE
-            }
-        )
+        HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY)
 
     private val retrofit = Retrofit.Builder()
         .baseUrl(BASE_URL)
@@ -29,5 +25,10 @@ class RetrofitClient {
         .client(okHttpClient)
         .build()
 
-    fun providePeopleApiService(): PeopleApiService = retrofit.create(PeopleApiService::class.java)
+    fun providePeopleApiService(): PeopleApiService =
+        retrofit.create()
+
+    private inline fun <reified T : Any> Retrofit.create(): T {
+        return create(T::class.java)
+    }
 }

@@ -1,4 +1,4 @@
-package com.example.peopleapi.presentation.ui.adapter
+package com.example.peopleapi.presentation.ui.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

@@ -1,7 +1,7 @@
-package com.example.peopleapi.presentation.ui.fragment
+package com.example.peopleapi.presentation.ui.fragments
 
 import com.example.peopleapi.presentation.base.BaseViewModel
-import com.example.domain.usecase.FetchPeopleUseCase
+import com.example.domain.usecases.FetchPeopleUseCase
 import com.example.peopleapi.presentation.models.PeopleModelUI
 import com.example.peopleapi.presentation.models.toUI
 import dagger.hilt.android.lifecycle.HiltViewModel

@@ -1,4 +1,4 @@
-package com.example.data.dtos
+package com.example.data.remote.dtos
 
 import com.example.domain.models.PeopleModel
 import com.google.gson.annotations.SerializedName
